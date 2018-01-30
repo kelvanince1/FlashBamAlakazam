@@ -29,6 +29,7 @@
 
 nav li {
   display: inline-block;
+  float: right;
 }
 
 a {

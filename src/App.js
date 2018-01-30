@@ -17,6 +17,7 @@ class App extends Component {
           <nav>
             <ul>
               <li><a href="Kelvan.pdf" target="_blank">Resume</a></li>
+              <li><a href="AWS.pdf" target="_blank">AWS Certificate</a></li>
             </ul>
           </nav>
         </div>
