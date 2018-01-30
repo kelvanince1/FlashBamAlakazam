@@ -26,3 +26,12 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+nav li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 117, 92);
+}
