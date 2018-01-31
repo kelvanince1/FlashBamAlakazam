@@ -48,21 +48,34 @@ class App extends Component {
           {state =>
             <div
               style={{
-                backgroundColor: 'red',
-                width: 100,
-                height: 100,
+                color: '#ffffff',
+                backgroundColor: '#731144',
+                width: 400,
+                height: 300,
                 margin: 'auto',
-                transition:  'opacity 1s ease-out',
+                transition: 'opacity 1s ease-out',
                 opacity: state === 'exiting' || state === 'entering' ? 0 : 1
               }}>
-              Hello
+              <ul>
+                <strong>Client</strong>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>jQuery</li>
+
+                <strong>Server</strong>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>Python</li>
+                <li>Ruby on Rails</li>
+              </ul>
             </div>
           }
         </Transition>
         <Modal show={this.state.modalIsOpen} closed={this.closeModal} />
         <button className="Button" onClick={this.showModal}>Skills</button><br />
         <button className="Button"><a href="Kelvan.pdf" target="_blank">Resume</a></button><br />
-        <button className="Button"><a href="Kelvan.pdf" target="_blank">AWS Certificate</a></button><br />
+        <button className="Button"><a href="AWS.pdf" target="_blank">AWS Certificate</a></button><br />
+        <button className="Button"><a href="https://github.com/kelvanince1" target="_blank">Github</a></button>
       </div>
     );
   }
