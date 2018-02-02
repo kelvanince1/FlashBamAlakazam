@@ -3,6 +3,8 @@ import Transition from 'react-transition-group/Transition';
 
 import './App.css';
 import scotland from './Scotland.png';
+import github from './github.svg';
+import linkedin from './linkedin.png';
 import Modal from "./components/Modal/Modal";
 
 class App extends Component {
@@ -27,11 +29,13 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+          <a href="https://github.com/kelvanince1" target="_blank"><img src={github} width="60" height="60" alt="github" /></a>
+          <a href="https://www.linkedin.com/in/kelvan-ince/" target="_blank"><img src={linkedin} width="60" height="60" alt="github" /></a>
           <img src={scotland} className="App-logo" alt="scotland" />
           <h1 className="App-title">Flash! Bam! Alakazam!</h1>
         </header>
         <br />
-        <button className='Button' onClick={() => this.setState(prevState => ({showBlock: !prevState.showBlock}))}>Toggle</button>
+        <button className='Button' onClick={() => this.setState(prevState => ({showBlock: !prevState.showBlock}))}>Links</button>
         <br />
         <Transition
           in={this.state.showBlock}
@@ -56,18 +60,7 @@ class App extends Component {
                 transition: 'opacity 1s ease-out',
                 opacity: state === 'exiting' || state === 'entering' ? 0 : 1
               }}>
-              <ul>
-                <strong>Client</strong>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>jQuery</li>
-
-                <strong>Server</strong>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>Python</li>
-                <li>Ruby on Rails</li>
-              </ul>
+              Hello
             </div>
           }
         </Transition>
@@ -75,7 +68,6 @@ class App extends Component {
         <button className="Button" onClick={this.showModal}>Skills</button><br />
         <button className="Button"><a href="Kelvan.pdf" target="_blank">Resume</a></button><br />
         <button className="Button"><a href="AWS.pdf" target="_blank">AWS Certificate</a></button><br />
-        <button className="Button"><a href="https://github.com/kelvanince1" target="_blank">Github</a></button>
       </div>
     );
   }
